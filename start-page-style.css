@@ -1,0 +1,29 @@
+.btn-center{
+    position: fixed;
+    left:42%;
+    top: 70%;
+}
+
+.text-center{
+    position: fixed;
+    left:33%;
+    top: 25%;
+}
+
+.startbtn {
+    font-family: Papyrus, fantasy;
+    font-size: 30px;
+    font-style: italic;
+    color: #aaf5f2;
+    border: 5px double #cbffc6;
+    border-radius: 20%;
+    background: #33475b;
+    outline:0;
+}
+
+.start_title{
+    font-family: Papyrus, fantasy;
+    font-size: 100px;
+    font-style: normal;
+    color: #aaf5f2;
+}
