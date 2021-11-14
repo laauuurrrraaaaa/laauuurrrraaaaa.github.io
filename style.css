@@ -69,6 +69,13 @@ body {
     width: available;
 }
 
+.div-class2{
+    height: 20em;
+    width: available;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
 div.gallery {
     border: 1px solid #ccc;
 }
