@@ -2,9 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kotlin Project</title>
 </head>
-<body>
+<body style="background-color:#3F4A5C">
 
+<div class="navbar">
+    <link rel="stylesheet" href="style.css">
+
+    <div class = "dropdown", style = "float:right;">
+        <button class = "dropbtn", onClick = "location.href='project.html'", style="padding-right: 20px; padding-left: 18px;">Project</button>
+        <div class="dropdown-content">
+            <a href="project1-CSC214.html">Kotlin Project</a>
+            <a href="project2-DMST104.html">CleverDesk Project</a>
+            <a href="project3-SDU.html">SQL Project</a>
+        </div>
+    </div>
+    <a href="background.html", style="float:right; padding-right: 20px; padding-left: 20px; ">Background</a>
+    <a href="home.html", style="float:right; padding-right: 20px; padding-left: 20px;">Home</a>
+</div>
+
+<div class = "Intro">
+    <h1 style = "text-align: center; font-size: 80px; color: white; margin-top: 1em; margin_bottom: 1em;">Guessing Game</h1>
+</div>
+
+<div class = "div-class2">
+    <p1 style = "text-align: center; font-size: 25px; color: white;">lalala</p1>
+</div>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="CSC214%20Assets/csc214%20page1.png" style="object-fit:scale-down;
+                    width:300px;
+                    height:450px;
+                    margin-left: 50px;
+                "/>
+        <img src="CSC214%20Assets/csc214%20page2.png" style="object-fit:scale-down;
+                    width:300px;
+                    height:450px;
+                "/>
+        <img src="CSC214%20Assets/csc214%20page3.png" style="object-fit:scale-down;
+                    width:300px;
+                    height:450px;
+                "/>
+
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="CSC214%20Assets/csc214%20page4.png" style="object-fit:scale-down;
+                    width:300px;
+                    height:450px;
+                    margin-left: 50px;
+                "/>
+        <img src="CSC214%20Assets/csc214%20page5.png" style="object-fit:scale-down;
+                    width:300px;
+                    height:450px;
+                "/>
+        <img src="CSC214%20Assets/csc214%20page6.png" style="object-fit:scale-down;
+                    width:300px;
+                    height:450px;
+                "/>
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
 </body>
 </html>

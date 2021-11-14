@@ -2,9 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SQL Project</title>
 </head>
-<body>
+<body style="background-color:#3F4A5C">
+
+<div class="navbar">
+    <link rel="stylesheet" href="style.css">
+
+    <div class = "dropdown", style = "float:right;">
+        <button class = "dropbtn", onClick = "location.href='project.html'", style="padding-right: 20px; padding-left: 18px;">Project</button>
+        <div class="dropdown-content">
+            <a href="project1-CSC214.html">Kotlin Project</a>
+            <a href="project2-DMST104.html">CleverDesk Project</a>
+            <a href="project3-SDU.html">SQL Project</a>
+        </div>
+    </div>
+    <a href="background.html", style="float:right; padding-right: 20px; padding-left: 20px; ">Background</a>
+    <a href="home.html", style="float:right; padding-right: 20px; padding-left: 20px;">Home</a>
+</div>
+
+<div class = "Intro">
+    <h1 style = "text-align: center; font-size: 80px; color: white; margin-top: 1em; margin_bottom: 1em;">Train Ticket Management System</h1>
+</div>
+
+<div class = "div-class2">
+    <p1 style = "text-align: center; font-size: 25px; color: white;">This is simple Train Ticket Management System developed in Chinese when I attended Study Local Program in China in Fall 2020. The project involves SQL for data storage and data accessing, JAVA for basic implementation, and HTML for web page setup. It achieves the goal for inserting, modifying, and deleting data for both administrators and users. Pages in white background are for administrators, while pages in green are for users.</p1>
+</div>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="SDU%20Assets/AdminAddTicket.png" style="width:100%">
+        <div class="text">Add new ticket information.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="SDU%20Assets/AdminAddTicket2.png" style="width:100%">
+        <div class="text">New ticket information added.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="SDU%20Assets/AdminAddTrain.png" style="width:100%">
+        <div class="text">Add new train information.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="SDU%20Assets/AdminAddTrain2.png" style="width:100%">
+        <div class="text">New train information added.</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
 
 </body>
 </html>
