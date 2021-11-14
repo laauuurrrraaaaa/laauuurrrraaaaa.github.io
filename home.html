@@ -22,96 +22,108 @@
   </div>
 
   <!--Introduction Section -->
-  <div class = "div-class2">
-    <h1 style = "text-align: center; font-size: 100px; color: white;">HELLO!</h1>
-    <p1 style = "text-align: center; font-size: 25px; color: white;">My name is Qianqian Li, but you can also call me Laura. I am a junior from University of Rochester double majoring in computer science and digital media studies. I am very interested in web design, software design, and AR/VR techniques and have some programming skills in Java, HTML, SQL, and so on.</p1>
+
+  <div class = "div-row">
+    <img src = "me.png" style = "width: 30%; height: 30%; margin-right:5vh;">
+    <div class = "col-md-10">
+      <h1 style = "text-align:center; color: white;">HELLO!</h1>
+      <p1 style = "text-align: center; font-size: 17px; color: white; line-height: 1.8;">My name is Qianqian Li, but you can also call me Laura. I am a junior from University of Rochester double majoring in computer science and digital media studies. I am very interested in web design, software design, and AR/VR techniques and have some programming skills in Java, HTML, SQL, and so on.</p1>
+    </div>
+
+
   </div>
 
-  <!--Project Overview Gallery-->
-  <div class = "ProjectOverview">
-    <h1 style = "text-align: center; font-size: 70px; color: white;">Project</h1>
+  <div class="slideshow-container">
+    <h1 style = "text-align:center; color: white; margin-top:calc(10vh);margin-bottom:calc(10vh);">Project Overview</h1>
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src = "SDU%20Assets/UserLoginPage.png" style="object-fit:scale-down;
+                    width:450px;
+                    height:450px;
+                    border: solid 1px #CCC;
+                    margin-left: 3em ;
+                "/>
+      <img src = "LOGO/2.png" style="object-fit:scale-down;
+                    width:450px;
+                    height:450px;
 
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="cloud.jpg">
-          <img src="cloud.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
+                 "/>
     </div>
 
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="night.jpg">
-          <img src="night.jpg" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src = "CSC214%20Assets/csc214%20page1.png" style="object-fit:scale-down;
+                    width:450px;
+                    height:450px;
+                    border: solid 1px #CCC;
+                    margin-left: 3em ;
+                "/>
+      <img src = "LOGO/1.png" style="object-fit:scale-down;
+                    width:450px;
+                    height:450px;
+                    margin-left: 2em;
+                 "/>
     </div>
 
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="cloud.jpg">
-          <img src="cloud.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src = "DMST104%20Assets/CleverDesk%20Model.jpeg" style="object-fit:scale-down;
+                    width:450px;
+                    height:450px;
+                    border: solid 1px #CCC;
+                    margin-left: 3em ;
+
+                "/>
+      <img src = "LOGO/3.png" style="object-fit:scale-down;
+                    width:450px;
+                    height:450px;
+                    margin-left: 2em;
+                 "/>
     </div>
 
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="night.jpg">
-          <img src="night.jpg" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="cloud.jpg">
-          <img src="cloud.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="night.jpg">
-          <img src="night.jpg" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="cloud.jpg">
-          <img src="cloud.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="night.jpg">
-          <img src="night.jpg" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-
-    <div class="clearfix"></div>
   </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
 
   <!--Contact-->
-  <div class = "Intro", style="background-color:orange;">
+  <div class = "Intro">
     <h1>Contact Info</h1>
 
   </div>

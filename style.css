@@ -64,13 +64,26 @@ body {
     display: block;
 }
 
+.div-row{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top:calc(10vh);
+    margin-left:calc(30vh);
+    margin-right:calc(30vh);
+}
+.div-col{
+    display: flex;
+    flex-direction: column;
+}
+
 .div-class{
-    height: 20em;
+
     width: available;
 }
 
 .div-class2{
-    height: 20em;
+    
     width: available;
     margin-left: 15em;
     margin-right: 15em;
@@ -131,6 +144,7 @@ img {vertical-align: middle;}
     max-width: 1000px;
     position: relative;
     margin: auto;
+    margin-top:calc(10vh);
 }
 
 /* Next & previous buttons */
