@@ -11,7 +11,7 @@
 .startbtn {
     font-size: 30px;
     font-style: italic;
-    color: #aaf5f2;
+    color: #ffffff;
     border: 5px double #cbffc6;
     border-radius: 20%;
     background: #33475b;
@@ -22,5 +22,5 @@
 .start_title{
     font-size: 100px;
     font-style: normal;
-    color: #aaf5f2;
+    color: #ffffff;
 }
