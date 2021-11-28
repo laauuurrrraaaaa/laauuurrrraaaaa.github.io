@@ -261,6 +261,7 @@ img {vertical-align: middle;}
     transition: all 0.5s;
     cursor: pointer;
     margin-left: 15%;
+    margin-top: 2%;
 }
 
 .button span {
