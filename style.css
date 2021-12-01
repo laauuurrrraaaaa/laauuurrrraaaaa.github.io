@@ -71,6 +71,7 @@ body {
     margin-top:calc(10vh);
     margin-left:calc(30vh);
     margin-right:calc(30vh);
+
 }
 .div-col{
     display: flex;
@@ -329,3 +330,36 @@ img {vertical-align: middle;}
     opacity: 1;
     left: 0;
 }
+
+div{
+    animation: fadeIn 2s ;
+}
+h1{
+    animation: fadeIn 2s ;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
