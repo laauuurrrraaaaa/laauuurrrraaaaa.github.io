@@ -20,7 +20,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #2c3142;
+    background-color: transparent;
 }
 
 .navbar a {
