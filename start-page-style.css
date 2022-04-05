@@ -1,3 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(-45deg, #4a5572, #b7bdbd, #79a4b2, #909ec2);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .btn-center{
     text-align: center;
     padding-top:5%;
@@ -53,25 +72,51 @@
     color: #ffffff;
 }
 
-.button2 {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
+/*.button2 {*/
+/*    display: inline-block;*/
+/*    padding: 15px 25px;*/
+/*    font-size: 24px;*/
+/*    cursor: pointer;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    outline: none;*/
+/*    color: #fff;*/
+/*    background-color: #4CAF50;*/
+/*    border: none;*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0 9px #999;*/
+/*}*/
+
+/*.button2:hover {background-color: #3e8e41}*/
+
+/*.button2:active {*/
+/*    background-color: #3e8e41;*/
+/*    box-shadow: 0 5px #666;*/
+/*    transform: translateY(4px);*/
+/*}*/
+
+.btn2{
+    width: 15vw;
+    height: 8vw;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+    background-color: transparent;
+    color: white;
+    font-size: 3vw;
+    font-weight:bold;
+    line-height: 1;
+    transition: transform 250ms;
+}
+.btn2:hover {
+    transform: translateY(-10px);
 }
 
-.button2:hover {background-color: #3e8e41}
-
-.button2:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+.btn3{
+    width: 2vw;
+    height: 8vw;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 3vw;
+    font-weight:bold;
+    line-height: 1;
 }

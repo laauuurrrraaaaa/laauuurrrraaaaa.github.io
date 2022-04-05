@@ -1,5 +1,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(-45deg, #4a5572, #b7bdbd, #79a4b2, #909ec2);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .navbar {
@@ -363,3 +379,28 @@ h1{
     100% {opacity:1;}
 }
 
+.btn2{
+    width: 28vw;
+    height: 8vw;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 7vw;
+    font-weight:bold;
+    line-height: 1;
+    transition: transform 250ms;
+}
+.btn2:hover {
+    transform: translateY(-20px);
+}
+
+.btn3{
+    width: 1vw;
+    height: 8vw;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 7vw;
+    font-weight:bold;
+    line-height: 1;
+}
