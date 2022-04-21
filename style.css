@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(-45deg, #4a5572, #7890a9, #79a4b2, #5b6b94);
+    background: linear-gradient(-45deg, #4a5572, #7890a9, #79a4b2, #5b5c94);
     background-size: 600% 600%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -21,6 +21,7 @@ body {
 .navbar {
     overflow: hidden;
     background-color: transparent;
+    font-family: Monaco, Helvetica, sans-serif;
 }
 
 .navbar a {
@@ -36,6 +37,7 @@ body {
     float: left;
     overflow: hidden;
     padding-right: 50px;
+    font-family: Monaco, Helvetica, sans-serif;
 }
 
 .dropdown .dropbtn {
@@ -51,7 +53,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #4ed0c7;
+    background-color: #8ad6e0;
 }
 
 .dropdown-content {
