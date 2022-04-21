@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(-45deg, #4a5572, #b7bdbd, #79a4b2, #909ec2);
-    background-size: 400% 400%;
+    background: linear-gradient(-45deg, #4a5572, #7890a9, #79a4b2, #5b6b94);
+    background-size: 600% 600%;
     animation: gradient 15s ease infinite;
     height: 100vh;
 }
@@ -272,9 +272,10 @@ img {vertical-align: middle;}
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 15px;
-    padding: 13px;
-    width: 10em;
+    font-family: Monaco, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    padding: 0.9vw;
+    width: 12em;
     transition: all 0.5s;
     cursor: pointer;
     margin-left: 15%;
@@ -313,9 +314,10 @@ img {vertical-align: middle;}
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 15px;
-    padding: 13px;
-    width: 10em;
+    font-family: Monaco, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    padding: 0.9vw;
+    width: 12em;
     transition: all 0.5s;
     cursor: pointer;
     margin-left: 15%;
@@ -380,17 +382,34 @@ h1{
 }
 
 .btn2{
-    width: 28vw;
+    font-family: Copperplate, Helvetica, sans-serif;
+    width: 29vw;
     height: 8vw;
     border: none;
     background-color: transparent;
     color: white;
-    font-size: 7vw;
+    font-size: 6.5vw;
     font-weight:bold;
     line-height: 1;
     transition: transform 250ms;
 }
 .btn2:hover {
+    transform: translateY(-20px);
+}
+
+.btn4{
+    font-family: Copperplate, Helvetica, sans-serif;
+    width: 21vw;
+    height: 8vw;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 6.5vw;
+    font-weight:bold;
+    line-height: 1;
+    transition: transform 250ms;
+}
+.btn4:hover {
     transform: translateY(-20px);
 }
 

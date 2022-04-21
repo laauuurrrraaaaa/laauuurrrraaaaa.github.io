@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Copperplate, Helvetica, sans-serif;
     background: linear-gradient(-45deg, #4a5572, #b7bdbd, #79a4b2, #909ec2);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -96,6 +96,7 @@ body {
 /*}*/
 
 .btn2{
+    font-family: Copperplate, Helvetica, sans-serif;
     width: 15vw;
     height: 8vw;
     border: none;
@@ -111,6 +112,7 @@ body {
 }
 
 .btn3{
+    font-family: Copperplate, Helvetica, sans-serif;
     width: 2vw;
     height: 8vw;
     border: none;
